@@ -1,0 +1,11 @@
+body.dark-mode {
+    background-color: #1a202c;
+    color: #e6d9d9;
+}
+
+
+#toggleDarkMode {
+    text-decoration: none;
+    box-shadow: 0 0 5px 5px #ccc;
+    border-radius: 80%;
+}
