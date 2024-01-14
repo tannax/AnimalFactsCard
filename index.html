@@ -64,6 +64,32 @@
             </label>
         </div>
     </div>
+
+    <footer id="site-footer">
+        <p>&copy; 2024 Animal Facts. All rights reserved.</p>
+        <p>Find me on GitHub: <a style="color: aliceblue;" href="https://github.com/tannax">tannax</a></p>
+    </footer>
+   <script>
+        //show/hide the footer when the user scrolls
+        document.addEventListener("DOMContentLoaded", function () {
+            var footer = document.getElementById("site-footer");
+            var prevScrollPos = window.scrollY;
+
+            window.addEventListener("scroll", function () {
+                var currentScrollPos = window.scrollY;
+
+                if (currentScrollPos > prevScrollPos) {
+                    // Scrolling down, show the footer
+                    footer.style.display = "block";
+                } else {
+                    // Scrolling up, hide the footer
+                    footer.style.display = "none";
+                }
+
+                prevScrollPos = currentScrollPos;
+            });
+        });
+    </script>
     <script defer src="script.js"></script>
 </body>
 
